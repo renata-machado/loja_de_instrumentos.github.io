@@ -10,14 +10,14 @@
 
     <title>Quarto do Músico</title>
   </head>
-  <body style="min-width: 372px">
+  <body style="min-width: 372px; background-color: burlywood;">
     <nav
       class="navbar navbar-expand-lg navabar-dark bg-black border-bottom shadow-sm mb-3"
     >
       <div class="container">
         <!-- delimita o espaco de acordo com os breakpoints do bootstrap -->
         <a class="navbar-brand " href=""
-          ><strong style="color: aliceblue;">Loja de Instrumentos</strong></a
+          ><strong style="color: aliceblue;">Quarto do Músico</strong></a
         >
 
         <button
@@ -71,13 +71,13 @@
           <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active text-center" data-bs-interval="1000" style=" transition: transform 2s ease, opacity 1.5s ease-out;"> <!-- cada um é um slide e passa de 3 em 3 segundos-->
+          <div class="carousel-item active text-center" data-bs-interval="3000" style=" transition: transform 3s ease, opacity 1.5s ease-out;"> <!-- cada um é um slide e passa de 3 em 3 segundos-->
             <img src="img/banner/img1.svg" alt="Promocao" class="img-fluid d-block ">
           </div>
-          <div class="carousel-item  text-center" data-bs-interval="1000" style="transition: transform 2s ease, opacity 1.5s ease-out;"> <!-- cada um é um slide e passa de 3 em 3 segundos-->
+          <div class="carousel-item  text-center" data-bs-interval="3000" style="transition: transform 3s ease, opacity 1.5s ease-out;"> <!-- cada um é um slide e passa de 3 em 3 segundos-->
             <img src="img/banner/img1.svg" alt="Promocao" class="img-fluid d-block ">
           </div>
-          <div class="carousel-item  text-center" data-bs-interval="1000" style="transition: transform 2s ease, opacity 1.5s ease-out;"> <!-- cada um é um slide e passa de 3 em 3 segundos-->
+          <div class="carousel-item  text-center" data-bs-interval="3000" style="transition: transform 3s ease, opacity 1.5s ease-out;"> <!-- cada um é um slide e passa de 3 em 3 segundos-->
             <img src="img/banner/img1.svg" alt="Promocao" class="img-fluid d-block ">
           </div>
         </div>
@@ -105,18 +105,350 @@
                 </button>
               </div>
           </div>
-          <div class="col-12 col-md-7 ">
+        </form>
+          <div class="col-12 col-md-7 d-flex flex-row-reverse justify-content-center justify-content-md-start ">
+            <form class=" d-inline-block" style="margin-left:15px;">
+              <select class="form-select form-select-sm">
+                <option >Ordenar pelo nome</option>
+                <option >Ordenar pelo menor preco</option>
+                <option >Ordenar pelo maior preco</option>
+              </select>
             </form>
-            
+            <nav class="d-inline-block">
+              <ul class="pagination pagination-sm my-0">
+                <li class="page-item">
+                  <button class="page-link">1</button>
+                </li>
+                <li class="page-item disabled">
+                  <button class="page-link">2</button>
+                </li>
+                <li class="page-item">
+                  <button class="page-link">3</button>
+                </li>
+                <li class="page-item">
+                  <button class="page-link">4</button>
+                </li>
+                <li class="page-item">
+                  <button class="page-link">5</button>
+                </li>
+                <li class="page-item">
+                  <button class="page-link">6</button>
+                </li>
+              </ul>
+            </nav>
           </div>
-        </div> 
+        </div>
+        <hr class="mt-3"> 
+        <div class="row">
+           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-sm-stretch mb-3"> <!--esse alinhamento deixa os itens do mesmo tamanho e essa div é responsável pela responsividade-->
+            <div class="card text-center bg-light"> <!--essa div é responsável pelo conteúdo-->
+              <a href="#" class="text-black position-absolute right-0 p-2">
+                <svg class="bi " width="24" height="24" fill="currentcolor">
+                  <use xlink:href="/bi.svg#heart"/>
+                </svg>
+              </a>
+              <div class="card-header">
+                R$ 120,00
+              </div>
+              <img src="img/instrumentos/sax.jpg" class="card-img-bottom">
+              <div class="card-body">
+                <h5 class="card-title">Saxofone</h5>
+                <p class="card-text">Original da Marca Panda</p>
+              </div>
+
+              <div class="card-footer">
+                <form class="d-block" >
+                  <button class="btn">Adicionar ao carrinho</button>
+                  <small class="text-success">50 unidades disponíveis</small>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-sm-stretch mb-3"> <!--esse alinhamento deixa os itens do mesmo tamanho e essa div é responsável pela responsividade-->
+            <div class="card text-center bg-light"> <!--essa div é responsável pelo conteúdo-->
+              <a href="#" class="text-black position-absolute right-0 p-2">
+                <svg class="bi " width="24" height="24" fill="currentcolor">
+                  <use xlink:href="/bi.svg#heart"/>
+                </svg>
+              </a>
+              <div class="card-header">
+                R$ 120,00
+              </div>
+              <img src="img/instrumentos/sax.jpg" class="card-img-bottom">
+              <div class="card-body">
+                <h5 class="card-title">Saxofone</h5>
+                <p class="card-text">Original da Marca Panda</p>
+              </div>
+
+              <div class="card-footer">
+                <form class="d-block" >
+                  <button class="btn">Adicionar ao carrinho</button>
+                  <small class="text-success">50 unidades disponíveis</small>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-sm-stretch mb-3"> <!--esse alinhamento deixa os itens do mesmo tamanho e essa div é responsável pela responsividade-->
+            <div class="card text-center bg-light"> <!--essa div é responsável pelo conteúdo-->
+              <a href="#" class="text-black position-absolute right-0 p-2">
+                <svg class="bi " width="24" height="24" fill="currentcolor">
+                  <use xlink:href="/bi.svg#heart"/>
+                </svg>
+              </a>
+              <div class="card-header">
+                R$ 120,00
+              </div>
+              <img src="img/instrumentos/sax.jpg" class="card-img-bottom">
+              <div class="card-body">
+                <h5 class="card-title">Saxofone</h5>
+                <p class="card-text">Original da Marca Panda</p>
+              </div>
+
+              <div class="card-footer">
+                <form class="d-block" >
+                  <button class="btn">Adicionar ao carrinho</button>
+                  <small class="text-success">50 unidades disponíveis</small>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-sm-stretch mb-3"> <!--esse alinhamento deixa os itens do mesmo tamanho e essa div é responsável pela responsividade-->
+            <div class="card text-center bg-light"> <!--essa div é responsável pelo conteúdo-->
+              <a href="#" class="text-black position-absolute right-0 p-2">
+                <svg class="bi " width="24" height="24" fill="currentcolor">
+                  <use xlink:href="/bi.svg#heart"/>
+                </svg>
+              </a>
+              <div class="card-header">
+                R$ 120,00
+              </div>
+              <img src="img/instrumentos/sax.jpg" class="card-img-bottom">
+              <div class="card-body">
+                <h5 class="card-title">Saxofone</h5>
+                <p class="card-text">Original da Marca Panda</p>
+              </div>
+
+              <div class="card-footer">
+                <form class="d-block" >
+                  <button class="btn">Adicionar ao carrinho</button>
+                  <small class="text-success">50 unidades disponíveis</small>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-sm-stretch mb-3"> <!--esse alinhamento deixa os itens do mesmo tamanho e essa div é responsável pela responsividade-->
+            <div class="card text-center bg-light"> <!--essa div é responsável pelo conteúdo-->
+              <a href="#" class="text-black position-absolute right-0 p-2">
+                <svg class="bi " width="24" height="24" fill="currentcolor">
+                  <use xlink:href="/bi.svg#heart"/>
+                </svg>
+              </a>
+              <div class="card-header">
+                R$ 120,00
+              </div>
+              <img src="img/instrumentos/sax.jpg" class="card-img-bottom">
+              <div class="card-body">
+                <h5 class="card-title">Saxofone</h5>
+                <p class="card-text">Original da Marca Panda</p>
+              </div>
+
+              <div class="card-footer">
+                <form class="d-block" >
+                  <button class="btn">Adicionar ao carrinho</button>
+                  <small class="text-success">50 unidades disponíveis</small>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-sm-stretch mb-3"> <!--esse alinhamento deixa os itens do mesmo tamanho e essa div é responsável pela responsividade-->
+            <div class="card text-center bg-light"> <!--essa div é responsável pelo conteúdo-->
+              <a href="#" class="text-black position-absolute right-0 p-2">
+                <svg class="bi " width="24" height="24" fill="currentcolor">
+                  <use xlink:href="/bi.svg#heart"/>
+                </svg>
+              </a>
+              <div class="card-header">
+                R$ 120,00
+              </div>
+              <img src="img/instrumentos/sax.jpg" class="card-img-bottom">
+              <div class="card-body">
+                <h5 class="card-title">Saxofone</h5>
+                <p class="card-text">Original da Marca Panda</p>
+              </div>
+
+              <div class="card-footer">
+                <form class="d-block" >
+                  <button class="btn">Adicionar ao carrinho</button>
+                  <small class="text-success">50 unidades disponíveis</small>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-sm-stretch mb-3"> <!--esse alinhamento deixa os itens do mesmo tamanho e essa div é responsável pela responsividade-->
+            <div class="card text-center bg-light"> <!--essa div é responsável pelo conteúdo-->
+              <a href="#" class="text-black position-absolute right-0 p-2">
+                <svg class="bi " width="24" height="24" fill="currentcolor">
+                  <use xlink:href="/bi.svg#heart"/>
+                </svg>
+              </a>
+              <div class="card-header">
+                R$ 120,00
+              </div>
+              <img src="img/instrumentos/sax.jpg" class="card-img-bottom">
+              <div class="card-body">
+                <h5 class="card-title">Saxofone</h5>
+                <p class="card-text">Original da Marca Panda</p>
+              </div>
+
+              <div class="card-footer">
+                <form class="d-block" >
+                  <button class="btn">Adicionar ao carrinho</button>
+                  <small class="text-success">50 unidades disponíveis</small>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-sm-stretch mb-3"> <!--esse alinhamento deixa os itens do mesmo tamanho e essa div é responsável pela responsividade-->
+            <div class="card text-center bg-light"> <!--essa div é responsável pelo conteúdo-->
+              <a href="#" class="text-black position-absolute right-0 p-2">
+                <svg class="bi " width="24" height="24" fill="currentcolor">
+                  <use xlink:href="/bi.svg#heart"/>
+                </svg>
+              </a>
+              <div class="card-header">
+                R$ 120,00
+              </div>
+              <img src="img/instrumentos/sax.jpg" class="card-img-bottom">
+              <div class="card-body">
+                <h5 class="card-title">Saxofone</h5>
+                <p class="card-text">Original da Marca Panda</p>
+              </div>
+
+              <div class="card-footer">
+                <form class="d-block" >
+                  <button class="btn">Adicionar ao carrinho</button>
+                  <small class="text-success">50 unidades disponíveis</small>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-sm-stretch mb-3"> <!--esse alinhamento deixa os itens do mesmo tamanho e essa div é responsável pela responsividade-->
+            <div class="card text-center bg-light"> <!--essa div é responsável pelo conteúdo-->
+              <a href="#" class="text-black position-absolute right-0 p-2">
+                <svg class="bi " width="24" height="24" fill="currentcolor">
+                  <use xlink:href="/bi.svg#heart"/>
+                </svg>
+              </a>
+              <div class="card-header">
+                R$ 120,00
+              </div>
+              <img src="img/instrumentos/sax.jpg" class="card-img-bottom">
+              <div class="card-body">
+                <h5 class="card-title">Saxofone</h5>
+                <p class="card-text">Original da Marca Panda</p>
+              </div>
+
+              <div class="card-footer">
+                <form class="d-block" >
+                  <button class="btn">Adicionar ao carrinho</button>
+                  <small class="text-success">50 unidades disponíveis</small>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-sm-stretch mb-3"> <!--esse alinhamento deixa os itens do mesmo tamanho e essa div é responsável pela responsividade-->
+            <div class="card text-center bg-light"> <!--essa div é responsável pelo conteúdo-->
+              <a href="#" class="text-black position-absolute right-0 p-2">
+                <svg class="bi " width="24" height="24" fill="currentcolor">
+                  <use xlink:href="/bi.svg#heart"/>
+                </svg>
+              </a>
+              <div class="card-header">
+                R$ 120,00
+              </div>
+              <img src="img/instrumentos/sax.jpg" class="card-img-bottom">
+              <div class="card-body">
+                <h5 class="card-title">Saxofone</h5>
+                <p class="card-text">Original da Marca Panda</p>
+              </div>
+
+              <div class="card-footer">
+                <form class="d-block" >
+                  <button class="btn">Adicionar ao carrinho</button>
+                  <small class="text-success">50 unidades disponíveis</small>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-sm-stretch mb-3"> <!--esse alinhamento deixa os itens do mesmo tamanho e essa div é responsável pela responsividade-->
+            <div class="card text-center bg-light"> <!--essa div é responsável pelo conteúdo-->
+              <a href="#" class="text-black position-absolute right-0 p-2">
+                <svg class="bi " width="24" height="24" fill="currentcolor">
+                  <use xlink:href="/bi.svg#heart"/>
+                </svg>
+              </a>
+              <div class="card-header">
+                R$ 120,00
+              </div>
+              <img src="img/instrumentos/sax.jpg" class="card-img-bottom">
+              <div class="card-body">
+                <h5 class="card-title">Saxofone</h5>
+                <p class="card-text">Original da Marca Panda</p>
+              </div>
+
+              <div class="card-footer">
+                <form class="d-block" >
+                  <button class="btn">Adicionar ao carrinho</button>
+                  <small class="text-success">50 unidades disponíveis</small>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 d-flex align-items-sm-stretch mb-3"> <!--esse alinhamento deixa os itens do mesmo tamanho e essa div é responsável pela responsividade-->
+            <div class="card text-center bg-light"> <!--essa div é responsável pelo conteúdo-->
+              <a href="#" class="text-black position-absolute right-0 p-2">
+                <svg class="bi " width="24" height="24" fill="currentcolor">
+                  <use xlink:href="/bi.svg#heart"/>
+                </svg>
+              </a>
+              <div class="card-header">
+                R$ 120,00
+              </div>
+              <img src="img/instrumentos/sax.jpg" class="card-img-bottom">
+              <div class="card-body">
+                <h5 class="card-title">Saxofone</h5>
+                <p class="card-text">Original da Marca Panda</p>
+              </div>
+
+              <div class="card-footer">
+                <form class="d-block" >
+                  <button class="btn">Adicionar ao carrinho</button>
+                  <small class="text-success">50 unidades disponíveis</small>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
       </div>
     </main>
 
-    <footer class="border-top fixed-bottom text-muted  bg-light">
+    <footer class="border-top mt-3 text-muted bg-gradient">
       <div class="container">
         <div class="row py-3">
-          <div class="col-12 col-md-4 text-center text-md-left ">
+          <div class="col-12 col-md-4 text-center text-dark text-md-left">
             &copy; 2024 - Quarto do Músico
           </div>
           <div class="col-12 col-md-4 text-center ">
